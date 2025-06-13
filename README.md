@@ -146,10 +146,9 @@ To get a copy of the project up and running on your local machine for developmen
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/STIG-Automation-ML.git](https://github.com/YourUsername/STIG-Automation-ML.git)
+    git clone [https://github.com/lailai11/STIG-Automation-ML.git](https://github.com/lailai11/STIG-Automation-ML.git)
     cd STIG-Automation-ML
     ```
-    (Replace `YourUsername` with your actual GitHub username).
 
 2.  **Create and activate a virtual environment** (recommended):
     ```bash
