@@ -123,23 +123,24 @@ Traditionally, STIG compliance involves extensive manual checks, even with autom
 
 ### Project Structure
 
-STIG-Automation-ML/
-data/
-raw/                  # Stores raw STIG XML files
-processed/            # Stores processed data
-src/
-utils/
-xccdf_parser.py   # Script to parse XCCDF XML files
-checks/
-windows_checker.py # Contains Windows-specific compliance checks
-models/               # Stores trained AI/ML models
-init.py           # Makes src a Python package
-app/
-main_app.py           # Streamlit dashboard application code
-notebooks/                # Jupyter notebooks for exploration
-.gitignore                # Untracked files to ignore
-README.md                 # Project overview and documentation
+This project is organized into the following directories and files:
 
+* **`STIG-Automation-ML/`** (Project Root)
+    * **`data/`**
+        * `raw/` - Stores raw STIG XML files (e.g., `U_MS_Windows_11_STIG_V2R3_Manual-xccdf.xml`)
+        * `processed/` - (Future) Stores processed data, e.g., JSON representation of STIGs
+    * **`src/`**
+        * `utils/`
+            * `xccdf_parser.py` - Script to parse XCCDF XML files into structured data
+        * `checks/`
+            * `windows_checker.py` - Contains functions for Windows-specific compliance checks
+        * `models/` - (Future) Stores trained AI/ML models
+        * `__init__.py` - Makes `src` a Python package
+    * **`app/`** - (Future) Contains Streamlit dashboard application code
+        * `main_app.py`
+    * **`notebooks/`** - (Future) Jupyter notebooks for data exploration and ML experimentation
+    * `.gitignore` - Specifies intentionally untracked files to ignore
+    * `README.md` - Project overview and documentation
 ### Getting Started
 
 To get a copy of the project up and running on your local machine for development and testing:
