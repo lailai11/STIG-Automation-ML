@@ -125,20 +125,20 @@ Traditionally, STIG compliance involves extensive manual checks, even with autom
 
 STIG-Automation-ML/
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── raw/                  # Stores raw STIG XML files
+│   └── processed/            # Stores processed data
 ├── src/
 │   ├── utils/
-│   │   └── xccdf_parser.py
+│   │   └── xccdf_parser.py   # Script to parse XCCDF XML files
 │   ├── checks/
-│   │   └── windows_checker.py
-│   ├── models/
-│   └── init.py
+│   │   └── windows_checker.py # Contains Windows-specific compliance checks
+│   ├── models/               # Stores trained AI/ML models
+│   └── init.py           # Makes src a Python package
 ├── app/
-│   └── main_app.py
-├── notebooks/
-├── .gitignore
-└── README.md
+│   └── main_app.py           # Streamlit dashboard application code
+├── notebooks/                # Jupyter notebooks for exploration
+├── .gitignore                # Untracked files to ignore
+└── README.md                 # Project overview and documentation
 
 ### Getting Started
 
